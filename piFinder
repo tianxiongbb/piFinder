@@ -39,12 +39,12 @@ help_info(){
 	echo "	Program needed (with RNA-seq input): STAR bowtie2"
 	echo "	Make sure all the program is contained by environment viariable PATH."
 	echo "	The pipeline also need index files builded already."
+	echo "  Needed Index --- bowtie: genome, rRNA, miRNA, ncRNA; [bowtie2: rRNA; STAR: genome]"	
 	echo ""
 	echo "    (￣(工)￣) Enjoy yourself~~~"
 	echo -e "\033[32m  =========================================================================================================================\033[0m"
 	echo ""
 }
-##TODO(BB): all index file needed, add to the help info. 
 
 if [ $# -lt 3 ];then
 	help_info
